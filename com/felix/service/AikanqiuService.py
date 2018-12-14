@@ -64,14 +64,15 @@ class AikanqiuService:
 
                         print("主队:" + homeTeamName + "--" + "客队:" + guestTeamName + "时间:" + gameTime)
 
-                        url = 'http://94.191.1.159:8081/live/saveGame';
+                        url = 'http://localhost:8081/live/saveGame'
 
                         data = {"gameName": gameName, "gameTime": gameTime, "homeTeamName": homeTeamName,
                                 "guestTeamName": guestTeamName, "iframeUrl": gameUrl}
 
                         rs = requests.post(url, data)
 
-                        # print(rs)
+                        print("返回结果:")
+                        print(rs)
 
 
             except Exception as e:

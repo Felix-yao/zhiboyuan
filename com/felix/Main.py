@@ -26,8 +26,7 @@ if __name__ == '__main__':
 
         if now.hour == h and now.minute == m:
 
-            # print("开始执行")
-
+            print("开始获取数据")
 
             # 获取爱看球直播源
             url = "https://www.aikanqiu.com/business.html"
@@ -40,7 +39,7 @@ if __name__ == '__main__':
 
 
         # 每隔60秒检测一次
-        time.sleep(6)
+        time.sleep(60)
 
 
 
