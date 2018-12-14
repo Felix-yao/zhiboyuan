@@ -60,7 +60,7 @@ class PymysqlUtil():
         return res
 
     #插入数据
-    def __insert(self, sql):
+    def insert(self, sql):
         count = 0
         try:
             self.getCon()
