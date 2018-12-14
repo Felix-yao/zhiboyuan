@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+# sys.path.append("/Users/felix/PycharmProjects/zhiboyuan/com/felix/service")
 import datetime
 import time
-from com.felix.dao.DidiaokanDao import DidiaokanDao
-from com.felix.service.AikanqiuService import AikanqiuService
+# from com.felix.service.AikanqiuService import AikanqiuService
+import AikanqiuService
 
 
 if __name__ == '__main__':
@@ -14,7 +20,7 @@ if __name__ == '__main__':
     while True:
         now = datetime.datetime.now()
 
-        # print(now.hour, now.minute)
+        print(now.hour, now.minute)
 
         # print(now.hour, now.minute, now.second)
 
@@ -34,7 +40,7 @@ if __name__ == '__main__':
 
 
         # 每隔60秒检测一次
-        time.sleep(60)
+        time.sleep(6)
 
 
 

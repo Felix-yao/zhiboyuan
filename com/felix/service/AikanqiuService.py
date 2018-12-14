@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from com.felix.util.RequestGet import RequestGet
+# from com.felix.util.RequestGet import RequestGet
+import RequestGet
 import datetime
 import requests
 
